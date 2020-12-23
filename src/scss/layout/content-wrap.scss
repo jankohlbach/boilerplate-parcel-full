@@ -1,0 +1,8 @@
+@use '../config/' as *;
+
+.content-wrap {
+  position: relative;
+  max-width: $content-width;
+  padding: 0 $page-margin;
+  margin: 0 auto;
+}

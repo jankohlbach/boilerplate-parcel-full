@@ -1,0 +1,12 @@
+@use './unit.scss' as *;
+@use './color' as *;
+
+$page-margin: 20px;
+$content-width: 1650px;
+
+$section-margin: rem(100);
+
+$element-margin: rem(30);
+
+$color-background: $white;
+$color-background-inverse: $black;

@@ -1,0 +1,85 @@
+@use '../config/' as *;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: $color-font;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: normal;
+  font-family: $base-font;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  font-size: $base-font-size;
+  scroll-behavior: smooth;
+
+  @media (max-width: $breakpoint-content) {
+    font-size: $base-font-size * .95;
+  }
+
+  @media (max-width: $breakpoint-large-max) {
+    font-size: $base-font-size * .9;
+  }
+
+  @media (max-width: $breakpoint-medium-large) {
+    font-size: $base-font-size * .85;
+  }
+
+  @media (max-width: $breakpoint-small-medium) {
+    font-size: $base-font-size * .8;
+  }
+
+  @media (max-width: $breakpoint-min-small) {
+    font-size: $base-font-size * .75;
+  }
+}
+
+::selection {
+  background-color: $color-font;
+  color: $color-font-inverse;
+}
+
+img {
+  display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+button,
+.button {
+  background-color: transparent;
+  appearance: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+  font-size: inherit;
+}

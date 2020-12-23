@@ -1,0 +1,5 @@
+@use '../config/' as *;
+
+h1 {
+  color: $color-brand-primary;
+}

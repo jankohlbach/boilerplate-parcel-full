@@ -1,0 +1,9 @@
+# node modules folder
+node_modules
+
+# output folders
+dist
+dev
+
+# parcel cache if activated
+.parcel-cache

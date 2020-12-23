@@ -1,0 +1,11 @@
+extends ../template/page
+
+include ../elements/dummy
+
+block variables
+  - const pageTitle = 'index';
+
+block main
+  main
+    +content-wrap
+      +dummy

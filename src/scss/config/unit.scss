@@ -1,0 +1,13 @@
+@use './typography.scss' as *;
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function rem($size-in-px) {
+  @return strip-unit($size-in-px) / strip-unit($base-font-size) * 1rem;
+}

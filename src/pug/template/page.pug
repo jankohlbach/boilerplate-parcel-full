@@ -1,0 +1,26 @@
+include ../globals.pug
+
+include ../layout/header
+include ../layout/content-wrap
+
+block variables
+
+<!DOCTYPE html>
+html(lang=lang)
+  head
+    each value in meta
+      meta&attributes(value)
+
+    title=pageTitle + ' - ' + projectName
+
+    each link in links
+      link&attributes(link)
+
+    each script in scripts
+      script&attributes(script)
+
+  body
+    block header
+      +header
+
+    block main
