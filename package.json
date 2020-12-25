@@ -17,16 +17,16 @@
     "not dead"
   ],
   "devDependencies": {
-    "stylelint": "^13.8.0",
-    "stylelint-scss": "^3.18.0",
-    "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-declaration-strict-value": "^1.7.5",
-    "eslint": "^7.2.0",
+    "eslint": "^7.16.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "parcel": "^2.0.0-beta.1",
+    "parcel": "^2.0.0-nightly.490",
     "pug": "^3.0.0",
-    "sass": "^1.30.0"
+    "sass": "^1.30.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-declaration-strict-value": "^1.7.5",
+    "stylelint-scss": "^3.18.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
