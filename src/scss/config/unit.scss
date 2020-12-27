@@ -1,4 +1,4 @@
-@use './typography.scss' as *;
+@use './typography' as *;
 
 @function strip-unit($number) {
   @if type-of($number) == 'number' and not unitless($number) {
