@@ -21,18 +21,20 @@
 
     "shorthand-property-no-redundant-values": true,
 
-    "no-descending-specificity": [true, {
-      "severity": "warning"
-    }],
+    "no-descending-specificity": [
+      true,
+      {"severity": "warning"}
+    ],
 
     "selector-max-specificity": "0,5,5",
     "selector-max-compound-selectors": 5,
     "selector-max-empty-lines": 0,
     "selector-max-universal": 2,
 
-    "max-nesting-depth": [4, {
-      "severity": "warning"
-    }],
+    "max-nesting-depth": [
+      4,
+      {"severity": "warning"}
+    ],
 
     "function-comma-space-after": "always-single-line",
     "function-comma-space-before": "never",
@@ -76,7 +78,15 @@
     "selector-list-comma-newline-before": "never-multi-line",
     "selector-list-comma-space-before": "never",
 
-    "rule-empty-line-before": "always",
+    "rule-empty-line-before": [
+      "always",
+      {
+        "ignore": [
+          "first-nested",
+          "after-comment"
+        ]
+      }
+    ],
 
     "media-feature-colon-space-after": "always",
     "media-feature-colon-space-before": "never",
