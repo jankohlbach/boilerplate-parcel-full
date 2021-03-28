@@ -2,6 +2,9 @@
 
 @use '../../node_modules/normalize.css/normalize.css';
 
+@use 'helper/breakpoint.scss' as *;
+@use 'helper/responsive.scss' as *;
+
 @use 'layout/general-elements';
 @use 'layout/content-wrap';
 

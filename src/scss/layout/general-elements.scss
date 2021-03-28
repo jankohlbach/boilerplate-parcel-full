@@ -9,7 +9,7 @@
   font-weight: $font-weight;
   font-size: $font-size;
   line-height: normal;
-  font-family: $base-font;
+  font-family: $font-base;
 }
 
 html,
@@ -18,28 +18,8 @@ body {
   height: 100%;
   overflow: hidden;
   overflow-y: auto;
-  font-size: $base-font-size;
+  font-size: $font-size-base;
   scroll-behavior: smooth;
-
-  @media (max-width: $breakpoint-content) {
-    font-size: $base-font-size * .95;
-  }
-
-  @media (max-width: $breakpoint-large-max) {
-    font-size: $base-font-size * .9;
-  }
-
-  @media (max-width: $breakpoint-medium-large) {
-    font-size: $base-font-size * .85;
-  }
-
-  @media (max-width: $breakpoint-small-medium) {
-    font-size: $base-font-size * .8;
-  }
-
-  @media (max-width: $breakpoint-min-small) {
-    font-size: $base-font-size * .75;
-  }
 }
 
 ::selection {
