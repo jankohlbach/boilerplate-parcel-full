@@ -1,3 +1,5 @@
+@forward 'breakpoint';
+
 @mixin responsive-width($min-width) {
   @media (min-width: $min-width) {
     @content;
