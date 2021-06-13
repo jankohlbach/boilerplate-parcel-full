@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel serve src/pug/pages/*.pug --dist-dir dev --no-cache --open",
-    "build": "rm -rf dist && mkdir dist && cp -r src/static/. dist && parcel build src/pug/pages/*.pug --dist-dir dist --no-cache --no-source-maps"
+    "build": "rm -rf dist && mkdir dist && cp -r src/static/. dist && parcel build src/pug/pages/*.pug --dist-dir dist --no-cache --public-url ./ --no-source-maps"
   },
   "author": "",
   "license": "ISC",
