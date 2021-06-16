@@ -4,10 +4,12 @@
     "browser": true,
     "node": true
   },
+  "parserOptions": {
+    "ecmaVersion": 2021
+  },
   "rules": {
     "no-param-reassign": ["warn"],
     "block-spacing": ["error", "never"],
-    "object-curly-spacing": ["error", "never"],
     "no-unused-expressions": ["error", {"allowTernary": true}]
   }
 }
