@@ -1,6 +1,7 @@
 # node modules folder
 node_modules
 package-lock.json
+yarn.lock
 
 # output folders
 dist
