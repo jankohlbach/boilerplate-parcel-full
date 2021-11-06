@@ -1,13 +1,14 @@
+@use 'sass:math';
 @use './typography' as *;
 
 @function strip-unit($number) {
   @if type-of($number) == 'number' and not unitless($number) {
-    @return $number / ($number * 0 + 1);
+    @return math.div($number, ($number * 0 + 1));
   }
 
   @return $number;
 }
 
 @function rem($size-in-px) {
-  @return strip-unit($size-in-px) / strip-unit($font-size-base) * 1rem;
+  @return math.div(strip-unit($size-in-px), strip-unit($font-size-base)) * 1rem;
 }
