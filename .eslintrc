@@ -9,7 +9,6 @@
   },
   "rules": {
     "no-param-reassign": ["warn"],
-    "block-spacing": ["error", "never"],
     "no-unused-expressions": ["error", {"allowTernary": true}]
   }
 }
