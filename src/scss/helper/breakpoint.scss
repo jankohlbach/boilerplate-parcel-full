@@ -10,10 +10,6 @@ $breakpoints: (
   xxl: 1920px,
 );
 
-@function breakpoint($name) {
-  @return map-get($breakpoints, $name);
-}
-
 @function bp($name) {
-  @return breakpoint($name);
+  @return map-get($breakpoints, $name);
 }

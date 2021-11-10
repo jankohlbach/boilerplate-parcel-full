@@ -1,8 +1,11 @@
 @charset 'UTF-8';
 
-@use '../../node_modules/normalize.css/normalize.css';
+@use 'vendor';
 
-@use 'layout/general-elements';
-@use 'layout/content-wrap';
+@use 'base';
 
-@use 'elements/dummy';
+@use 'layout';
+
+@use 'components';
+
+@use 'pages';
